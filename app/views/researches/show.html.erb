@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @research.date %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @research.code %>
+</p>
+
+<p>
+  <strong>Research type:</strong>
+  <%= @research.research_type %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @research.description %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @research.area %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @research.author %>
+</p>
+
+<p>
+  <strong>Monument:</strong>
+  <%= @research.monument %>
+</p>
+
+<%= link_to 'Edit', edit_research_path(@research) %> |
+<%= link_to 'Back', researches_path %>

@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @momument.code %>
+</p>
+
+<p>
+  <strong>Alternative name:</strong>
+  <%= @momument.alternative_name %>
+</p>
+
+<p>
+  <strong>Culture:</strong>
+  <%= @momument.culture %>
+</p>
+
+<p>
+  <strong>Monument type:</strong>
+  <%= @momument.monument_type %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @momument.description %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @momument.length %>
+</p>
+
+<p>
+  <strong>Width:</strong>
+  <%= @momument.width %>
+</p>
+
+<p>
+  <strong>Approximate area:</strong>
+  <%= @momument.approximate_area %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @momument.photo %>
+</p>
+
+<p>
+  <strong>Architectural style:</strong>
+  <%= @momument.architectural_style %>
+</p>
+
+<p>
+  <strong>Technical condition:</strong>
+  <%= @momument.technical_condition %>
+</p>
+
+<p>
+  <strong>Material:</strong>
+  <%= @momument.material %>
+</p>
+
+<%= link_to 'Edit', edit_momument_path(@momument) %> |
+<%= link_to 'Back', momuments_path %>

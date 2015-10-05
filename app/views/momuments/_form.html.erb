@@ -1,0 +1,65 @@
+<%= form_for(@momument) do |f| %>
+  <% if @momument.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@momument.errors.count, "error") %> prohibited this momument from being saved:</h2>
+
+      <ul>
+      <% @momument.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :alternative_name %><br>
+    <%= f.text_field :alternative_name %>
+  </div>
+  <div class="field">
+    <%= f.label :culture %><br>
+    <%= f.text_field :culture %>
+  </div>
+  <div class="field">
+    <%= f.label :monument_type %><br>
+    <%= f.text_field :monument_type %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :length %><br>
+    <%= f.text_field :length %>
+  </div>
+  <div class="field">
+    <%= f.label :width %><br>
+    <%= f.text_field :width %>
+  </div>
+  <div class="field">
+    <%= f.label :approximate_area %><br>
+    <%= f.text_field :approximate_area %>
+  </div>
+  <div class="field">
+    <%= f.label :photo %><br>
+    <%= f.text_field :photo %>
+  </div>
+  <div class="field">
+    <%= f.label :architectural_style %><br>
+    <%= f.text_field :architectural_style %>
+  </div>
+  <div class="field">
+    <%= f.label :technical_condition %><br>
+    <%= f.text_field :technical_condition %>
+  </div>
+  <div class="field">
+    <%= f.label :material %><br>
+    <%= f.text_field :material %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

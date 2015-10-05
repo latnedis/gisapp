@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyString
+  code: MyString
+  research_type: MyString
+  description: MyString
+  area: MyString
+  author_id: 
+  monument_id: 
+
+two:
+  date: MyString
+  code: MyString
+  research_type: MyString
+  description: MyString
+  area: MyString
+  author_id: 
+  monument_id: 

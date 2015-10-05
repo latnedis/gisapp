@@ -1,0 +1,1 @@
+json.extract! @momument, :id, :code, :alternative_name, :culture, :monument_type, :description, :length, :width, :approximate_area, :photo, :architectural_style, :technical_condition, :material, :created_at, :updated_at

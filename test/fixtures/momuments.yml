@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: MyString
+  alternative_name: MyString
+  culture: MyString
+  monument_type: MyString
+  description: MyString
+  length: MyString
+  width: MyString
+  approximate_area: MyString
+  photo: MyString
+  architectural_style: MyString
+  technical_condition: MyString
+  material: MyString
+
+two:
+  code: MyString
+  alternative_name: MyString
+  culture: MyString
+  monument_type: MyString
+  description: MyString
+  length: MyString
+  width: MyString
+  approximate_area: MyString
+  photo: MyString
+  architectural_style: MyString
+  technical_condition: MyString
+  material: MyString

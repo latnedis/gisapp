@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Researches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Code</th>
+      <th>Research type</th>
+      <th>Description</th>
+      <th>Area</th>
+      <th>Author</th>
+      <th>Monument</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @researches.each do |research| %>
+      <tr>
+        <td><%= research.date %></td>
+        <td><%= research.code %></td>
+        <td><%= research.research_type %></td>
+        <td><%= research.description %></td>
+        <td><%= research.area %></td>
+        <td><%= research.author %></td>
+        <td><%= research.monument %></td>
+        <td><%= link_to 'Show', research %></td>
+        <td><%= link_to 'Edit', edit_research_path(research) %></td>
+        <td><%= link_to 'Destroy', research, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Research', new_research_path %>
